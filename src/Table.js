@@ -168,6 +168,8 @@ const Table = () => {
         icons={tableicons}
         options={{
           selection: true,
+          filtering: true
+
         }}
         localization={{
           pagination: {
@@ -189,6 +191,7 @@ const Table = () => {
             },
           },
         }}
+     
         editable={{
           onRowAdd: (newData) =>
             new Promise((resolve, reject) => {
